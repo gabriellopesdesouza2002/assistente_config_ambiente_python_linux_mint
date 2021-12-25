@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo 'Limpando a tela...'
+sleep 2  # Espera 2 segundos
+clear
+
 echo 'Esse é o assistente de configuração de ambiente para desenvolvimento em Python'
 
 sleep 2  # Espera 2 segundos
@@ -21,19 +25,19 @@ clear
 
 sleep 2  # Espera 2 segundos
 
-echo "Você quer instalar o Snap? [y|n]"
-
-read installsnap
-
-if [ $installsnap == 'y' ]; then
-	sudo rm /etc/apt/preferences.d/nosnap.pref
-	sudo apt update
-	sudo apt install snapd -y
-fi
-
-
-echo "Instalando o Pycharm Community"
+echo 'Instalando o snap, para instalação do Pycharm Community'
 
 sleep 2  # Espera 2 segundos
+sudo rm /etc/apt/preferences.d/nosnap.pref
+sudo apt update
+sudo apt install snapd -y
 
-sudo snap install pycharm-community --classic -y
+sleep 2  # Espera 2 segundos
+clear
+echo "Instalando o Pycharm Community"
+echo ''
+sleep 2  # Espera 2 segundos
+
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+
+sudo snap install pycharm-community --classic
