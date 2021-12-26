@@ -28,17 +28,20 @@ sleep 2  # Espera 2 segundos
 echo 'Instalando o snap, para instalação do Pycharm Community'
 
 sleep 2  # Espera 2 segundos
+echo ''
 sudo rm /etc/apt/preferences.d/nosnap.pref
-sudo apt update
+sudo apt update -y
 sudo apt install snapd -y
 
 sleep 2  # Espera 2 segundos
 clear
-echo "Instalando o Pycharm Community"
-echo ''
-sleep 2  # Espera 2 segundos
 
-sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+echo "Instalando o Pycharm Community"
+sleep 2  # Espera 2 segundos
+echo ''
+
+
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade -y
 
 sudo snap install pycharm-community --classic
 
