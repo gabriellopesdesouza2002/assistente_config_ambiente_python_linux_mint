@@ -1,16 +1,12 @@
 #!/bin/bash
 
+tput setaf 3; echo 'Esse é o assistente de configuração de ambiente para desenvolvimento em Python 3'
+echo ''
 echo 'Limpando a tela...'
 sleep 2  # Espera 2 segundos
 clear
 
-echo 'Esse é o assistente de configuração de ambiente para desenvolvimento em Python'
-
-sleep 2  # Espera 2 segundos
-
-echo ''
-
-echo 'Atualizando pacotes, verificando atualizações e fazendo configurações para python3'
+tput setaf 2; echo 'Atualizando pacotes, verificando atualizações e fazendo configurações para Python 3'
 
 sleep 2  # Espera 2 segundos
 
@@ -25,7 +21,7 @@ clear
 
 sleep 2  # Espera 2 segundos
 
-echo 'Instalando o snap, para instalação do Pycharm Community'
+tput setaf 2; echo 'Instalando o snap, para instalação do Pycharm Community'
 
 sleep 2  # Espera 2 segundos
 echo ''
@@ -36,7 +32,7 @@ sudo apt install snapd -y
 sleep 2  # Espera 2 segundos
 clear
 
-echo "Instalando o Pycharm Community"
+tput setaf 2; echo "Instalando o Pycharm Community"
 sleep 2  # Espera 2 segundos
 echo ''
 
@@ -49,17 +45,17 @@ sleep 3 # Espera 3 segundos
 
 clear
 
-echo 'Você gostaria de reiniciar o computador agora, para completar as configurações?'
-echo '[y | n ]'
+tput setaf 1; echo 'Você gostaria de reiniciar o computador agora, para completar as configurações?'
+tput setaf 3; echo '[y | n ]'
 read reiniciar
 
 if [ $reiniciar == 'y' ] ;
 then    echo
-        echo 'Reiniciando o PC em 3 segundos...'
+        tput setaf 1; echo 'Reiniciando o PC em 3 segundos...'
         sleep 3  # Espera 3 segundos
         sudo reboot
 else    echo
-        echo 'Ok, pressione qualquer tecla para sair...'
+        tput setaf 3; echo 'Ok, pressione qualquer tecla para sair...'
         read
 fi
 exit
