@@ -41,3 +41,22 @@ sleep 2  # Espera 2 segundos
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 
 sudo snap install pycharm-community --classic
+
+sleep 3 # Espera 3 segundos
+
+clear
+
+echo 'Você gostaria de reiniciar o computador agora, para completar as configurações?'
+echo '[y | n ]'
+read reiniciar
+
+if [ $reiniciar == 'y' ] ;
+then    echo
+        echo 'Reiniciando o PC em 3 segundos...'
+        sleep 3  # Espera 3 segundos
+        sudo reboot
+else    echo
+        echo 'Ok, pressione qualquer tecla para sair...'
+        read
+fi
+exit
