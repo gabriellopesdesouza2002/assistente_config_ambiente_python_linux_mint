@@ -34,12 +34,12 @@
 ![va para documentos](https://user-images.githubusercontent.com/65515076/147396055-176f864b-b2b1-4d45-9d56-eb2f64f28071.gif)
  - [x] 4 - Baixe (copie) o arquivo configure.sh utilizando o git clone
 
-		git clone https://github.com/gabriellopesdesouza2002/configuration_for_devlopment_in_python_linux.git
+		git clone https://github.com/gabriellopesdesouza2002/assistente_config_ambiente_python_linux_mint.git
 ![baixa repo](https://user-images.githubusercontent.com/65515076/147396077-0d66c7c3-f4bb-4066-9a4f-c43ed47c11f0.gif)
  - [x] 5 - Vá para a pasta
-       (configuration_for_devlopment_in_python_linux)
+       (assistente_config_ambiente_python_linux_mint)
        
-		cd configuration_for_devlopment_in_python_linux
+		cd assistente_config_ambiente_python_linux_mint
 		
 ![vai pra config](https://user-images.githubusercontent.com/65515076/147396086-4d432d51-126c-4b84-9afc-5f24f68b3864.gif)
  - [x] 6 - Mude as permissões, usando chmod:
