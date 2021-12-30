@@ -7,7 +7,7 @@
 > ### Ao finalizar, você terá o Python instalado e o Pycharm Community para você desenvolver os seus projetos!
 
   
-**Distribuição utilizada**: Linux Mint 19.3
+**Distribuição utilizada**: Linux Mint 19.3 XFCE
   
 ### Passo a passo ->
 
